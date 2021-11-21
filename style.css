@@ -1,0 +1,285 @@
+* {
+	box-sizing:border-box;
+	margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: "Georgia";
+	font-size: 20px;
+	background-color: white;
+	justify-content: center;
+	overflow-x: hidden;
+	margin-top: 12rem;
+	position: relative;
+}
+
+footer {
+	text-align: right;
+	padding: 20px;
+	position: relative;
+	clear: both;
+	bottom: 0;
+	width: 100%;
+}
+
+#wheat {
+	width: 100px;
+	height: 50px;
+	background-repeat: repeat-x;
+}
+
+.text_footer {
+	font-size: 13px;
+}
+
+#logo {
+	width: 20rem;
+	height: 20rem;
+	margin-top: -6.8rem;
+}
+
+#qr-code {
+	width: 10rem;
+	height: 10rem;
+	margin-top: 1.5rem;
+}
+
+p {
+	color: black;
+	overflow: hidden;
+}
+
+#the_first {
+	margin-top: 8px;
+}
+
+.container {
+	margin-top: 100px;
+	width: 80%;
+	padding: 40px;
+}
+
+#star {
+	width: 45px;
+	height: 45px;
+	transition: 0.9s; /* star's time rotation */
+	position: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 22px;
+}
+
+.nav {
+ width: 100%;
+ display: fixed;
+ position: fixed;
+ background: #D43004;
+ height: 13vh;
+ top: 0;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+ overflow-y: hidden;
+ left: 0;
+ right: 0;
+ z-index: 1
+}
+
+.sub {
+ display: flex;
+ justify-content: center;
+}
+
+.nav_li {
+ padding: 40px;
+ color: #F8C104;
+ list-style: none;
+ margin-left: -2px;
+}
+
+a {
+	text-decoration: none;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.current {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: inherit;
+}
+
+.nav_li a:hover, .nav_li a:focus {
+  background-color: rgba(255, 165, 0, 0.73);
+  color: #fff;
+}
+
+.hamburger {
+ display: none;
+ cursor: pointer;
+ padding: 5px;
+}
+
+#text {
+	margin-top: -5rem;
+}
+
+#osu_clubs {
+	text-decoration: underline;
+	margin-left: -18px;
+}
+
+#events {
+	margin-top: 3rem;
+	margin-left: 5rem;
+	margin-bottom: 6rem;
+	cursor: context-menu;
+	float: left;
+	left: 0;
+}
+
+.events_li {
+	list-style: none;
+	margin-top: 1.3rem;
+	color: #F8C104;
+	text-decoration: underline;
+	margin-bottom: 0.5rem;
+}
+
+.sub_events {
+	float: left;
+	left: 0;
+}
+
+.info {
+	line-height: 1.5;
+}
+
+/* slideshow for merch */
+
+[type=radio] {
+  display: none;
+}
+
+#slider {
+  height: 30rem;
+	width: 30rem;
+  position: relative;
+  perspective: 1500px;
+  transform-style: preserve-3d;
+	justify-content: center;
+	margin-top: -80px;
+	margin-bottom: -40px;
+}
+
+#slider label {
+  margin: auto;
+  width: 68%;
+  height: 80%;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+	right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%,0,-200px);
+}
+
+#slide1 {
+	background-image: url("./images/1.jpg");
+	background-size: 330px 410px;
+}
+#slide2 {
+	background-image: url("./images/2.jpg");
+	background-size: 330px 410px;
+}
+#slide3 {
+	background-image: url("./images/3.jpg");
+	background-size: 330px 410px;
+}
+#slide4 {
+	background-image: url("./images/4.jpg");
+	background-size: 330px 410px;
+}
+#slide5 {
+	background-image: url("./images/5.jpg");
+	background-size: 330px 410px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	* {
+
+	 }
+
+	body {
+		overflow-y: auto;
+	}
+
+	.sub {
+		position: fixed;
+		z-index: 20;
+		top: 10vh;
+		width: 33%;
+		right: 0px;
+		flex-direction: column;
+		background-color: black;
+		transition: transform 0.3s ease-in;
+		transform: translate(100%);
+		box-shadow: 5px 7px #D43004;
+		overflow: hidden;
+	 }
+
+	.nav-change {
+		transform: translate(0%);
+	 }
+
+	.hamburger {
+		display: block;
+	 }
+
+	.change #star {
+		transform: rotate(360deg); /* star's rotation 360 degrees, full circle */
+		overflow: hidden;
+		position: inherit;
+	}
+	}
